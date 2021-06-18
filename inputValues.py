@@ -1,22 +1,22 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter.ttk import *
+
 def clicked():
     # ----do an empty label check
 
     #calculation
+    input = int(1)
     value = float(txt1.get())
     lowerlimit = value - float(combo1.get())*value/100
     upperlimit = value + float(combo1.get())*value/100
-    #print(value)
-    #print(lowerlimit)
-    #print(upperlimit)
-    # return
-    return input, lowerlimit, upperlimit
-    #
-    messagebox.showinfo('Message title', 'Message content')
+    print(value)
+    print(lowerlimit)
+    print(upperlimit)
+    messagebox.showinfo('Message', 'Complete')
 
 
+# complete code
 
 window = Tk()
 window.title("Input range for testing")
