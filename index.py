@@ -1,14 +1,14 @@
 # Given range
-X = [10, 100, 1000, 10000, 100000, 100000]
-Y = [20, 200, 2000, 20000, 200000, 200000]
+lowerRange = [10, 100, 1000, 10000, 100000, 100000]
+upperRange = [20, 200, 2000, 20000, 200000, 200000]
 # Test Input List
 testInput = [15, 105, 1005, 10005, 100005, 100005]
-def checkRange(index, num):
+def checkRange(indelowerRange, num):
    # using comaparision operator
-   if X[index] <= num <= Y[index]:
-      print('The value {} is in range ({}, {})'.format(num, X[index], Y[index]))
+   if lowerRange[indelowerRange] <= num <= upperRange[indelowerRange]:
+      print('The value {} is in range ({}, {})'.format(num, lowerRange[indelowerRange], upperRange[indelowerRange]))
    else:
-      print('The value {} is not in range ({}, {})'.format(num, X[index], Y[index]))
+      print('The value {} is not in range ({}, {})'.format(num, lowerRange[indelowerRange], upperRange[indelowerRange]))
 
 
 for i, val in enumerate(testInput):
