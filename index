@@ -1,0 +1,18 @@
+# Given range
+LowerRange = [10, 100, 1000, 10000, 100000, 100000]
+UpperRange = [20, 200, 2000, 20000, 200000, 200000]
+# Test Input List
+testInput = [15, 105, 1005, 10005, 100005, 100005]
+
+# Function for range checking
+def checkRange(index, num):
+   # using comaparision operator
+   if LowerRange[index] <= num <= UpperRange[index]:
+       print(‘The value {} is in range ({}, {})’.format(num, LowerRange[index], UpperRange[index]))
+   else:
+      print(‘The value {} is not in range ({}, {})’.format(num, LowerRange[index], UpperRange[index]))
+
+# Loop for sending each test input to check range function
+for i, val in enumerate(testInput):
+  print (‘The input no is {} and the value is {}’.format(i , val))
+  checkRange(i, val)
