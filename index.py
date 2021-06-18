@@ -3,9 +3,9 @@ lowerRange = [10, 100, 1000, 10000, 100000, 100000]
 upperRange = [20, 200, 2000, 20000, 200000, 200000]
 # Test Input List
 testInput = [15, 105, 1005, 10005, 100005, 100005]
-def checkRange(indelowerRange, num):
+def checkRange(index, num):
 # using comaparision operator
-   if lowerRange[indelowerRange] <= num <= upperRange[indelowerRange]:
+   if lowerRange[index] <= num <= upperRange[index]:
       print('The value {} is in range ({}, {})'.format(num, lowerRange[indelowerRange], upperRange[indelowerRange]))
    else:
       print('The value {} is not in range ({}, {})'.format(num, lowerRange[indelowerRange], upperRange[indelowerRange]))
