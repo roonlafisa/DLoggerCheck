@@ -1,10 +1,11 @@
 import inputValues
 print(inputValues.lowerlimit)
 
-inputValues.lowerlimit = [10, 100, 1000, 10000, 100000, 100000]
-inputValues.upperlimit = [20, 200, 2000, 20000, 200000, 200000]
+
 # Test Input List
-inputValues.value = [15, 105, 1005, 10005, 100005, 100005]
+#inputValues.lowerlimit = [10, 100, 1000, 10000, 100000, 100000]
+#inputValues.upperlimit = [20, 200, 2000, 20000, 200000, 200000]
+#inputValues.value = [15, 105, 1005, 10005]
 def checkRange(index, num):
 # using comaparision operator
    if inputValues.lowerlimit[index] <= num <= inputValues.upperlimit[index]:
