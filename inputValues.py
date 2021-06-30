@@ -10,7 +10,7 @@ def instructions():
     instruc.geometry("600x200")
     lblins1 = Label(instruc, text="Step1: Input your reference data and select percentage tolerance range. Hit 'set tolerance'")
     lblins1.grid(column=0, row=1)
-    lblins2 = Label(instruc, text="Step2: Input your input values and hit 'measure button'")
+    lblins2 = Label(instruc, text="Step2: Input your input values and hit 'check data'")
     lblins2.grid(column=0, row=3)
 
 def set_tolerance():
@@ -192,15 +192,15 @@ txtin4.grid(column=5, row=3)
 
 # instructionss
 btnins = Button(window, text="instructions", command=instructions)
-btnins.grid(column=1, row=7)
+btnins.grid(column=2, row=7)
 
 # set tolerance button
 btn = Button(window, text="Set tolerance", command=set_tolerance)
-btn.grid(column=2, row=7)
+btn.grid(column=3, row=7)
 
 # checkrange button
 btn2 = Button(window, text="Check data", command=checkRange)
-btn2.grid(column=5, row=7)
+btn2.grid(column=4, row=7)
 
 
 #update results
