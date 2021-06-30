@@ -46,7 +46,7 @@ def set_tolerance():
 
 def checkRange():
     global index, input, checkeddata
-    checkeddata=["red", "red", "red", "red"]
+    checkeddata=["incorrect value", "incorrect value", "incorrect value", "incorrect value"]
     # set inputs
     testin1 = float(txtin1.get())
     testin2 = float(txtin2.get())
@@ -56,7 +56,7 @@ def checkRange():
 
     for index in range(len(input)):
         if lowerlimit[index] <= input[index] <= upperlimit[index]:
-            checkeddata[index] = "green"
+            checkeddata[index] = "value OK "
             print(index)
         else:
 
@@ -96,7 +96,7 @@ def checkRange():
 
 window = Tk()
 window.title("Data Log QC Semi-Automation")
-window.geometry('1100x300')
+window.geometry('950x180')
 
 
 # value 1
